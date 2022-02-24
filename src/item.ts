@@ -28,6 +28,10 @@ export default class Arrow implements IScript<Props> {
             scale: new Vector3(8, 6, 1)
         }))
 
+        onEnterSceneObservable.add((player) => {
+            log("player entered scene: ", player.userId)
+        })
+
 
 
     }
