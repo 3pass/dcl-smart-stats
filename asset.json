@@ -1,0 +1,21 @@
+{
+  "id": "5023e08d-c1f7-4756-807e-1e2a79d4513d",
+  "name": "3stat",
+  "tags": [
+    "analytics"
+  ],
+  "category": "decorations",
+  "parameters": [
+    {
+      "id": "customerId",
+      "label": "3stat customer id",
+      "type": "text"
+    },
+    {
+      "id": "itemId",
+      "label": "3stat item id",
+      "type": "text"
+    }
+  ],
+  "actions": []
+}
