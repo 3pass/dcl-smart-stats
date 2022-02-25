@@ -11,8 +11,6 @@ export const registerDclEvents = async () => {
     const { cid: parcelId } = parcel
     const baseParcel = parcel.land.sceneJsonData.scene.base
 
-    log({ parcelId, baseParcel })
-
     onEnterSceneObservable.add(async (player) => {
         enterTime = Date.now()
         fireEvent('enterLand',{parcelId, baseParcel})
