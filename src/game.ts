@@ -1,17 +1,13 @@
 import { Spawner } from '../node_modules/decentraland-builder-scripts/spawner'
-import Arrow, { Props } from './item'
+import Arrow  from './item'
 
 const arrow = new Arrow()
-const spawner = new Spawner<Props>(arrow)
+const spawner = new Spawner(arrow)
 
 spawner.spawn(
     'arrow',
     new Transform({
         position: new Vector3(4, 0, 8)
-    }),
-    {
-        customerId: 'mon4si',
-        itemId: '2430'
-    }
+    })
 )
 

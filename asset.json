@@ -5,17 +5,5 @@
     "analytics"
   ],
   "category": "decorations",
-  "parameters": [
-    {
-      "id": "customerId",
-      "label": "3stat customer id",
-      "type": "text"
-    },
-    {
-      "id": "itemId",
-      "label": "3stat item id",
-      "type": "text"
-    }
-  ],
   "actions": []
 }

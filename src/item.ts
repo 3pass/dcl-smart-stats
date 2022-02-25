@@ -1,18 +1,16 @@
+import { registerDclEvents } from "./eventListeners"
+
+
 const url = 'https://europe-west3-backend-339310.cloudfunctions.net/serve/mon4si-2430.jpg'
 
-export type Props = {
-    customerId: string,
-    itemId: string
-}
 
-export default class Arrow implements IScript<Props> {
+export default class Arrow {
 
     init() {}
 
-    spawn(host: Entity, props: Props) {
+    spawn(host: Entity) {
         const billboard = new Entity()
         billboard.setParent(host)
-        const url = `https://europe-west3-backend-339310.cloudfunctions.net/serve/${props.customerId}-${props.itemId}.jpg`
         const loadedTexture = new Texture(url, {wrap: 0})
         const adMaterial = new BasicMaterial()
         adMaterial.texture = loadedTexture
@@ -27,11 +25,7 @@ export default class Arrow implements IScript<Props> {
             rotation: new Quaternion(0, 0, 0, 0),
             scale: new Vector3(8, 6, 1)
         }))
-
-        onEnterSceneObservable.add((player) => {
-            log("player entered scene: ", player.userId)
-        })
-
+        registerDclEvents()
 
 
     }
