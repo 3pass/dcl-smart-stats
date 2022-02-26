@@ -13,6 +13,7 @@ export const registerDclEvents = async () => {
 
     onEnterSceneObservable.add(async (player) => {
         enterTime = Date.now()
+        log('enter!!!')
         fireEvent('enterLand',{parcelId, baseParcel})
     })
 
@@ -30,4 +31,6 @@ export const registerDclEvents = async () => {
         const duration = Math.floor(Date.now() - connectionTime)
         fireEvent('connectionDuration', {parcelId, baseParcel, duration})
     })
+
+    return {parcelId, baseParcel}
 }
