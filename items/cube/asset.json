@@ -1,5 +1,5 @@
 {
-  "name": "3pass analytics cube",
+  "name": "3stats",
   "model": "models/cube.glb",
   "tags": [
     "analytics", "3pass", "3stats"

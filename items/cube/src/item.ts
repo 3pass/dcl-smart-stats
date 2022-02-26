@@ -1,8 +1,6 @@
 import { registerDclEvents } from '../lib'
 
 
-type ChangeTextType = { newText: string }
-
 export default class SignPost {
   init() {}
 
