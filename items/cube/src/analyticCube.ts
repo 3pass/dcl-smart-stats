@@ -1,10 +1,10 @@
 import { registerDclEvents } from '../lib'
 
 
-export default class SignPost {
+export class AnalyticCube {
   init() {}
 
-  async spawn(host: Entity) {
+  async render(host: Entity) {
     const sign = new Entity()
     sign.setParent(host)
 
@@ -14,7 +14,7 @@ export default class SignPost {
 
     log({ parcelId })
 
-    sign.addComponent(new GLTFShape('models/Game_Cube_D.glb'))
+    sign.addComponent(new GLTFShape('models/cube.glb'))
     sign.addComponent(new Transform({}))
 
     // TODO: compute customerId
@@ -51,5 +51,11 @@ export default class SignPost {
         scale: new Vector3(0.58, 0.58, 0.58),
       })
     )
+  }
+
+  spawn(host: Entity) {
+
+    this.render(host).then()
+
   }
 }

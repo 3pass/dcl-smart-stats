@@ -17,17 +17,17 @@ export const registerDclEvents = async () => {
         fireEvent('enterLand',{parcelId, baseParcel})
     })
 
-    onLeaveSceneObservable.add((player) => {
+    onLeaveSceneObservable.add(player => {
         const duration = Math.floor(Date.now() - enterTime)
         fireEvent('visitDuration', {parcelId, baseParcel, duration})
     })
 
-    onPlayerConnectedObservable.add((player) => {
+    onPlayerConnectedObservable.add(player => {
         connectionTime = Date.now()
         fireEvent('connectLand',{parcelId, baseParcel})
     })
 
-    onPlayerDisconnectedObservable.add((player) => {
+    onPlayerDisconnectedObservable.add(player => {
         const duration = Math.floor(Date.now() - connectionTime)
         fireEvent('connectionDuration', {parcelId, baseParcel, duration})
     })

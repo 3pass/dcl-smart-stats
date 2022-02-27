@@ -1,0 +1,9 @@
+{
+
+  "name": "3stat smart item",
+  "tags": ["banner"],
+  "category": "decorations",
+  "model": "models/image_preview.glb",
+  "parameters": [
+  ]
+}
