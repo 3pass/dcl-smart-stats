@@ -1,13 +1,13 @@
 {
   "display": {
-    "title": "Adshares banner",
-    "description": "Adshares banner test scene",
+    "title": "3pass banner",
+    "description": "3pass banner",
     "navmapThumbnail": "images/scene-thumbnail.png",
     "favicon": "favicon_asset"
   },
   "contact": {
-    "name": "Adshares",
-    "email": "contact@adshares.net"
+    "name": "3pass",
+    "email": "team@3pass.app"
   },
   "owner": "",
   "scene": {

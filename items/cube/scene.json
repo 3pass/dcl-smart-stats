@@ -1,11 +1,12 @@
 {
   "display": {
-    "title": "interactive-text",
+    "title": "3pass cube",
+    "description": "3pass cube",
     "favicon": "favicon_asset"
   },
   "contact": {
-    "name": "author-name",
-    "email": ""
+    "name": "3pass",
+    "email": "team@3pass.app"
   },
   "owner": "",
   "scene": {
