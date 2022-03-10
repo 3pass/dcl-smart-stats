@@ -1,11 +1,12 @@
 {
   "display": {
-    "title": "interactive-text",
+    "title": "3pass zero",
+    "description": "3pass zero",
     "favicon": "favicon_asset"
   },
   "contact": {
-    "name": "author-name",
-    "email": ""
+    "name": "3pass",
+    "email": "team@3pass.app"
   },
   "owner": "",
   "scene": {
