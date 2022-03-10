@@ -4,18 +4,22 @@ const fireEvent = (event: any, msg: any) => log('event!')
 
 
 export default class AnalyticBanner {
+
     init() {}
 
     async renderBanner(host: Entity) {
         // const {parcelId, baseParcel} = await registerDclEvents()
 
 
+        const parcel = await getParcel()
+        const { cid: parcelId } = parcel
+        const baseParcel = parcel.land.sceneJsonData.scene.base
+        log({baseParcel, parcelId})
+
 
         // const itemId = baseParcel.replace('-','m')
-        const itemId = 'sciArt'
         // TODO: compute customerId
-        const customerId = 'demo01'
-        const url = `https://europe-west3-backend-339310.cloudfunctions.net/serve/${customerId}-${itemId}.jpg`
+        const url = `https://europe-west3-backend-339310.cloudfunctions.net/serve/${baseParcel}-${parcelId}.jpg`
 
         let QRPlane = new Entity()
         QRPlane.setParent(host)
@@ -41,6 +45,7 @@ export default class AnalyticBanner {
     }
 
     spawn(host: Entity) {
+        log('hello from spawn')
         this.renderBanner(host).then()
     }
 }
