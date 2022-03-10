@@ -18,8 +18,9 @@ export default class AnalyticBanner {
 
 
         // const itemId = baseParcel.replace('-','m')
-        // TODO: compute customerId
-        const url = `https://europe-west3-backend-339310.cloudfunctions.net/serve/${baseParcel}-${parcelId}.jpg`
+        // TODO: itemId as parameter
+        const itemId = 'default'
+        const url = `https://europe-west3-backend-339310.cloudfunctions.net/serve/dcl-${baseParcel}-${itemId}.jpg`
 
         let QRPlane = new Entity()
         QRPlane.setParent(host)

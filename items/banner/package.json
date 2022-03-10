@@ -1,7 +1,7 @@
 {
-  "name": "adshares-banner",
+  "name": "@3pass/dcl-banner",
   "version": "1.0.0",
-  "description": "Adshares banner smart item",
+  "description": "3stat banner smart item",
   "scripts": {
     "start": "dcl start",
     "build": "build-ecs",
