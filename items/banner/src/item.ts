@@ -14,7 +14,7 @@ export default class AnalyticBanner {
         // const itemId = baseParcel.replace('-','m')
         const itemId = 'sciArt'
         // TODO: compute customerId
-        const customerId = 'hTMR5yjBRdct61jGs7CzEPAFm3l2'
+        const customerId = 'demo01'
         const url = `https://europe-west3-backend-339310.cloudfunctions.net/serve/${customerId}-${itemId}.jpg`
 
         let QRPlane = new Entity()
