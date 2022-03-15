@@ -20,7 +20,7 @@ export default class AnalyticBanner {
         // const itemId = baseParcel.replace('-','m')
         // TODO: itemId as parameter
         const itemId = 'default'
-        const url = `https://europe-west3-backend-339310.cloudfunctions.net/serve/dcl-${baseParcel}-${itemId}.jpg`
+        const url = `https://europe-west3-backend-339310.cloudfunctions.net/serve/dcl:${baseParcel}-${itemId}.jpg`
 
         let QRPlane = new Entity()
         QRPlane.setParent(host)
@@ -46,7 +46,7 @@ export default class AnalyticBanner {
     }
 
     spawn(host: Entity) {
-        log('hello from spawn')
-        this.renderBanner(host).then()
+        log('hello from spawn!!!')
+        this.renderBanner(host)
     }
 }
